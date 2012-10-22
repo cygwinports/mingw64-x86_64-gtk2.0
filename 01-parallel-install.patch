@@ -1,0 +1,10 @@
+--- origsrc/gtk+-2.24.13/gdk/Makefile.am	2012-01-10 18:06:05.000000000 -0600
++++ src/gtk+-2.24.13/gdk/Makefile.am	2012-10-22 01:16:09.562389800 -0500
+@@ -263,6 +263,7 @@ endif # HAVE_INTROSPECTION
+ 
+ if OS_WIN32
+ install-def-file: gdk.def
++	$(mkinstalldirs) $(DESTDIR)$(libdir)
+ 	$(INSTALL) $(srcdir)/gdk.def $(DESTDIR)$(libdir)/gdk-win32-2.0.def
+ uninstall-def-file:
+ 	-rm $(DESTDIR)$(libdir)/gdk-win32-2.0.def
