@@ -3,7 +3,7 @@ ORIG_PN="gtk+"
 inherit cross gnome2
 
 NAME="mingw64-x86_64-gtk2.0"
-VERSION=2.24.29
+VERSION=2.24.30
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GTK+ GUI toolkit for Win64 toolchain"
